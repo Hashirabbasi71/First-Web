@@ -1,0 +1,51 @@
+.about-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.about-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Responsive: Tablets and Phones */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-section {
+    padding: 20px 15px;
+  }
+}

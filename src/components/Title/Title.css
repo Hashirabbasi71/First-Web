@@ -1,0 +1,52 @@
+.title-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* match hero */
+  color: white;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+/* 📱 Phone */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+
+  .title-container {
+    height: auto;
+    padding: 30px 15px;
+  }
+}
